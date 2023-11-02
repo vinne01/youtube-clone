@@ -1,0 +1,141 @@
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 20px;
+}
+
+@media (max-width: 750px){
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .video-title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .video-stats,
+    .video-author {
+        font-size: 14px;
+    }
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+.thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.video-time {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.profile-picture {
+    width: 36px;
+    border-radius: 50px;
+}
+
+.video-title-link,
+.channel-link {
+    text-decoration: none;
+    color: black;
+}
+
+.video-title {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.video-author,
+.video-stats {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+
+.video-author {
+    margin-bottom: 4px;
+}
+
+.thumbnail:hover,
+.profile-picture:hover,
+.video-title:hover,
+.video-author:hover {
+    cursor: pointer;
+}
+
+.profile-picture-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-picture-container:hover .channel-tooltip {
+    opacity: 1;
+}
+
+.channel-tooltip {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    width: 200px;
+    padding: 12px 12px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    position: absolute;
+    top: 50px;
+    z-index: 300;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;   
+}
+
+.channel-tooltip-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 8px;
+}
+
+.channel-tooltip-name {
+    font-family: Roboto, Arial;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.channel-tooltip-stats {
+    font-family: Roboto, Arial;
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+}
+

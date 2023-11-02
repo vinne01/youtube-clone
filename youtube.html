@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My First Youtube clone Projects
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/video.css">
+        <link rel="stylesheet" href="styles/sidebar.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="left-section">
+                <img class="hamburger-logo" src="icons/hamburger-menu.svg">
+                <img class="youtube-logo" src="icons/youtube-logo.svg">
+            </div>
+            <div class="middle-section">
+                <input class="search-bar" type="text" placeholder="Search">
+                <button class="search-button">
+                    <img class="search-icon" src="icons/search.svg">
+                    <div class="tooltip">Search</div>
+                </button>
+                <button class="voice-search-button">
+                    <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+                    <div class="tooltip">Search with your voice</div>
+                </button>
+            </div>
+            <div class="right-section">
+                <div class="upload-icon-container">
+                    <img class="upload-icon" src="icons/upload.svg">
+                    <div class="tooltip">Create</div>
+                </div>
+                <div class="youtube-apps-icon-container">
+                    <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+                    <div class="tooltip">Youtube apps</div>
+                </div>
+                <div class="notifications-icon-container">
+                    <img class="notifications-icon" src="icons/notifications.svg">
+                    <div class="notifications-count">3</div>
+                    <div class="tooltip">Notifications</div>
+                </div>
+                <img class="current-user-picture-icon" src="channel-pictures/channel-logo.jpg">
+            </div>
+        </header>
+        <nav class="sidebar">
+            <div class="sidebar-link">
+                <img src="icons/home.svg">
+                <div>Home</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/explore.svg">
+                <div>Explore</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/subscriptions.svg">
+                <div>Subscriptions</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/originals.svg">
+                <div>Originals</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/youtube-music.svg">
+                <div>Youtube Music</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/library.svg">
+                <div>Library</div>
+            </div>
+        </nav>
+        <main>
+            <section class="video-grid">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnails/sixpack.jpg">
+                        </a>
+                        <div class="video-time">14:20</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">   
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/c/mkbhd" target="_blank" class="channel-link">
+                                    <img class="profile-picture" src="channel-pictures/sixpacks.jpg">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <img class="channel-tooltip-picture" src="channel-pictures/channel-1.jpeg">
+                                    <div class="channel-info-tooltip">
+                                        <p class="channel-tooltip-name">Six Pack Programmer</p>
+                                        <p class="channel-tooltip-stats">16.6M subscribers</p>
+                                    </div>
+                                </div>
+                            </div>                                                                                  
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=PGsgv6nXhLw&list=PLDzeHZWIZsTomOPnCiU3J95WufjE36wsb" target="_blank" class="video-title-link">
+                                <p class="video-title">How can Easy way to Learn Web Development</p>
+                            </a>
+                            <div class="tooltip-hover">
+                                <a href="https://www.youtube.com/watch?v=9VdFCP6nC-g" target="_blank" class="channel-link">
+                                    <p class="video-author">Six Pack Programmer</p>
+                                </a>                            
+                                <p class="video-stats">18M views &#183; 6 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnails/the mridul.jpg">
+                        </a>                        
+                        <div class="video-time">8:22</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/watch?v=QYTQTlUqneY" target="_blank" class="channel-link">
+                                    <img class="profile-picture" src="channel-pictures/themriduls.jpg">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <img class="channel-tooltip-picture" src="channel-pictures/themriduls.jpg">
+                                    <div class="channel-info-tooltip">
+                                        <p class="channel-tooltip-name">The MriDul</p>
+                                        <p class="channel-tooltip-stats">34.3M subscribers</p>
+                                    </div>
+                                </div>         
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=fZdkGBHaAPM" target="_blank" class="video-title-link">
+                                <p class="video-title">Try Not to Laugh Challenge #9</p>
+                            </a>
+                            <a href="https://www.youtube.com/c/markiplier" target="_blank" class="channel-link">
+                                <p class="video-author">The MriDul</p>
+                            </a>                            
+                            <p class="video-stats">25M views &#183; 4 years ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=d3O2cnQHItg" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnails/amit.jpg">
+                        </a>                        
+                        <div class="video-time">9:13</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/watch?v=d3O2cnQHItg" target="_blank" class="channel-link">
+                                    <img class="profile-picture" src="channel-pictures/amits.jpg">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <img class="channel-tooltip-picture" src="channel-pictures/amits.jpg">
+                                    <div class="channel-info-tooltip">
+                                        <p class="channel-tooltip-name">Amit Badana</p>
+                                        <p class="channel-tooltip-stats">33.2M subscribers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=d3O2cnQHItg" target="_blank" class="video-title-link">
+                                <p class="video-title">SSC | EP 03: Rank, रण और Restart | Amit Bhadana</p>
+                            </a>
+                            <a href="https://www.youtube.com/user/SSSniperWolf" target="_blank" class="channel-link">
+                                <p class="video-author">Amit Badana</p>
+                            </a>                            
+                            <p class="video-stats">12M views &#183; 6 months ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=094y1Z2wpJg" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnails/gateknowledge.jpg">
+                        </a>                        
+                        <div class="video-time">22:09</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/c/veritasium" target="_blank" class="channel-link">
+                                    <img class="profile-picture" src="channel-pictures/gateknowledges.jpg">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <img class="channel-tooltip-picture" src="channel-pictures/gateknowledges.jpg">
+                                    <div class="channel-info-tooltip">
+                                        <p class="channel-tooltip-name">Gate Knowledge</p>
+                                        <p class="channel-tooltip-stats">13.3M subscribers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=YRnjGeQbsHQ&list=PLmXKhU9FNesR1rSES7oLdJaNFgmuj0SYV&index=1" target="_blank" class="video-title-link">
+                                <p class="video-title">Complete DBMS Data Base Management System in one shot | Semester Exam | Hindi</p>
+                            </a>
+                            <a href="https://www.youtube.com/c/veritasium" target="_blank" class="channel-link">
+                                <p class="video-author">Gate Knowledge</p>
+                            </a>                            
+                            <p class="video-stats">18M views &#183; 4 months ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=4D55Cmj2t-A&list=PLc5rXIqickU1fJkB1vmgedDQa3QOHNPxY" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnails/gatesmasher.jpg">
+                        </a>                        
+                        <div class="video-time">11:17</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/c/CSDojo" target="_blank" class="channel-link">
+                                    <img class="profile-picture" src="channel-pictures/gatesmashers.jpg">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <img class="channel-tooltip-picture" src="channel-pictures/gatesmashers.jpg">
+                                    <div class="channel-info-tooltip">
+                                        <p class="channel-tooltip-name">Gate Smasher</p>
+                                        <p class="channel-tooltip-stats">1.89M subscribers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=86CQq3pKSUw" target="_blank" class="video-title-link">
+                                <p class="video-title">Lec-2: Introduction to Computer Network | OSI MODEL in easiest Way in Hindi | Need of OSI model</p>
+                            </a>
+                            <a href="https://www.youtube.com/c/CSDojo" target="_blank" class="channel-link">
+                                <p class="video-author">Gate Smasher</p>
+                            </a>                            
+                            <p class="video-stats">519K views &#183; 5 years ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=2H8QmXhVvoY" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnails/mysirg.jpg">
+                        </a>                        
+                        <div class="video-time">19:59</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA" target="_blank" class="channel-link">
+                                    <img class="profile-picture" src="channel-pictures/mysirgs.jpg">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <img class="channel-tooltip-picture" src="channel-pictures/mysirgs.jpg">
+                                    <div class="channel-info-tooltip">
+                                        <p class="channel-tooltip-name">MySirg</p>
+                                        <p class="channel-tooltip-stats">129M subscribers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg" target="_blank" class="video-title-link">
+                                <p class="video-title">Implementation of Stack using list | DSA using Python | हिंदी में | MySirG</p>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA" target="_blank" class="channel-link">
+                                <p class="video-author">MySirg</p>
+                            </a>                            
+                            <p class="video-stats">141M views &#183; 1 year ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnails/mysirg.jpg">
+                        </a>                        
+                        <div class="video-time">10:13</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <div class="profile-picture-container">
+                                <a href="" target="_blank" class="channel-link">
+                                    <img class="profile-picture" src="channel-pictures/mysirgs.jpg">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <img class="channel-tooltip-picture" src="channel-pictures/mysirgs.jpg">
+                                    <div class="channel-info-tooltip">
+                                        <p class="channel-tooltip-name">Mysirg</p>
+                                        <p class="channel-tooltip-stats">6.56M subscribers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg" target="_blank" class="video-title-link">
+                                <p class="video-title">Implementation of Stack using list | DSA using Python | हिंदी में | MySirG</p>
+                            </a>
+                            <a href="https://www.youtube.com/channel/@saurabhexponent1 target="_blank" class="channel-link">
+                                <p class="video-author">Mysirg</p>
+                            </a>                            
+                            <p class="video-stats">6.6M views &#183; 1 year ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=9VdFCP6nC-g&t=1s" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnails/carryminati.jpg">
+                        </a>                        
+                        <div class="video-time">7:12</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/channel/UCHAK6CyegY22Zj2GWrcaIxg" target="_blank" class="channel-link">
+                                    <img class="profile-picture" src="channel-pictures/carrymaintii.jpg">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <img class="channel-tooltip-picture" src="channel-pictures/carrymaintii.jpg">
+                                    <div class="channel-info-tooltip">
+                                        <p class="channel-tooltip-name">Carrryminati</p>
+                                        <p class="channel-tooltip-stats">40M subscribers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=lFm4EM1juls" target="_blank" class="video-title-link">
+                                <p class="video-title">BIGG BOSS OR YOUTUBE? The Final Verdict | CARRYMINATI Q&A 2023</p>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCHAK6CyegY22Zj2GWrcaIxg" target="_blank" class="channel-link">
+                                <p class="video-author">Carryminati</p>
+                            </a>
+                            <p class="video-stats">3.7M views &#183; 10 months ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=FYBuOLKKqrw" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnails/pwskill.jpg">
+                        </a>                        
+                        <div class="video-time">13:17</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/c/OFFICIALTHENXSTUDIOS" target="_blank" class="channel-link">
+                                    <img class="profile-picture" src="channel-pictures/college wallah.jpg">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <img class="channel-tooltip-picture" src="channel-pictures/college wallah.jpg">
+                                    <div class="channel-info-tooltip">
+                                        <p class="channel-tooltip-name">College Wallah</p>
+                                        <p class="channel-tooltip-stats">7.56M subscribers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=FYBuOLKKqrw" target="_blank" class="video-title-link">
+                                <p class="video-title">Binary Search In One Shot C++ | Complete DSA Course 2023 | Placement / Internships Course</p>
+                            </a>
+                            <a href="https://www.youtube.com/@CollegeWallahbyPW" target="_blank" class="channel-link">
+                                <p class="video-author">college wallah</p>
+                            </a>
+                            <p class="video-stats">20M views &#183; 3 year ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=_-2u4EPHD88&list=PLDzeHZWIZsTqBmRGnsCOGNDG5FY0G04Td" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnails/lovebabbar.jpg">
+                        </a>                        
+                        <div class="video-time">7:53</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/user/businessinsider" target="_blank" class="channel-link">
+                                    <img class="profile-picture" src="channel-pictures/gatesmashers.jpg">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <img class="channel-tooltip-picture" src="channel-pictures/gatesmashers.jpg">
+                                    <div class="channel-info-tooltip">
+                                        <p class="channel-tooltip-name">Love Babbar</p>
+                                        <p class="channel-tooltip-stats">7.36M subscribers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=_-2u4EPHD88&list=PLDzeHZWIZsTqBmRGnsCOGNDG5FY0G04Td" target="_blank" class="video-title-link">
+                                <p class="video-title">Lecture 31: Learning Recursion the Best Way! | 10 Day Recursion Challenge</p>
+                            </a>
+                            <a href="https://www.youtube.com/@CodeHelp" target="_blank" class="channel-link">
+                                <p class="video-author">Love Babbar</p>
+                            </a>                            
+                            <p class="video-stats">14M views &#183; 1 year ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=-mJFZp84TIY&list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnails/codewithharry.jpg">
+                        </a>                    
+                        <div class="video-time">4:10</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/c/Destinationtips" target="_blank" class="channel-link">
+                                    <img class="profile-picture" src="channel-pictures/codewithharrys.jpg">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <img class="channel-tooltip-picture" src="channel-pictures/codewithharrys.jpg">
+                                    <div class="channel-info-tooltip">
+                                        <p class="channel-tooltip-name">Code with Harry</p>
+                                        <p class="channel-tooltip-stats">279K subscribers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=0nZuYyXET3s" target="_blank" class="video-title-link">
+                                <p class="video-title">Introduction to React Js + Installation | Complete React Course in Hindi #1</p>
+                            </a>
+                            <a href="https://www.youtube.com/@codewithharry" target="_blank" class="channel-link">
+                                <p class="video-author">Codewithharry</p>
+                            </a>                            
+                            <p class="video-stats">3M views &#183; 1 year ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=9iMGFqMmUFs" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnails/carryminati.jpg">
+                        </a>                        
+                        <div class="video-time">4:51</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/teded" target="_blank" class="channel-link">
+                                    <img class="profile-picture" src="channel-pictures/carrymaintii.jpg">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <img class="channel-tooltip-picture" src="channel-pictures/carrymaintii.jpg">
+                                    <div class="channel-info-tooltip">
+                                        <p class="channel-tooltip-name">Carryminati</p>
+                                        <p class="channel-tooltip-stats">18.1M subscribers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=-mJFZp84TIY&list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt" target="_blank" class="video-title-link">
+                                <p class="video-title">Introduction to React Js + Installation | Complete React Course in Hindi #1</p>
+                            </a>                        
+                            <a href="https://www.youtube.com/@CodeWithHarry" target="_blank" class="channel-link">
+                                <p class="video-author">carryminati</p>
+                            </a>                            
+                            <p class="video-stats">12M views &#183; 5 years ago</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
